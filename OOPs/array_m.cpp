@@ -17,7 +17,6 @@ int main()
     cout << "A2 INTPUT OVER" << endl;
 
     res = a1.add(a2);
-
     res.display();
 
     return 0;

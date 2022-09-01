@@ -14,7 +14,7 @@ Array::Array()
 
 void Array::take_input()
 {
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < size; i++)
     {
         cout << "Enter the value at " << i << "th Position: ";
         cin >> arr[i];
@@ -23,7 +23,7 @@ void Array::take_input()
 
 void Array::display()
 {
-    for (int i = 0; i < 5; i++)
+    for (int i = 0; i < size; i++)
     {
         cout << arr[i] << " ";
     }
