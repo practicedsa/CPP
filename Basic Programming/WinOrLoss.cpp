@@ -1,5 +1,5 @@
 //You and your friend decide to play a game where given some numbers, you have to find the maximum number. If the maximum is an even number, you win and if it is odd, your friend wins.
-
+ 
 
 #include <bits/stdc++.h>
 using namespace std;

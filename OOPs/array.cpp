@@ -29,14 +29,39 @@ void Array::display()
     }
 }
 
-Array Array::add(Array temp)
-{
-    Array res(this->size);
+// Array Array::add(Array temp)
+// {
+//     Array res(this->size);
 
-    for (int i = 0; i < temp.size; i++)
+//     for (int i = 0; i < temp.size; i++)
+//     {
+//         res.arr[i] = this->arr[i] + temp.arr[i];
+//     }
+
+//     return res;
+// }
+
+ostream &operator<<(ostream &out, const Array &ob)
+{
+    out << "The Elements of Array is: " << endl;
+
+    for (int i = 0; i < ob.size; i++)
     {
-        res.arr[i] = this->arr[i] + temp.arr[i];
+        out << ob.arr[i] << " ";
+    }
+    
+    out << endl;
+
+    return out;
+}
+
+istream &operator>>(istream &in, const Array &ob)
+{
+    for (int i = 0; i < 5; i++)
+    {
+        cout << "Enter the value at " << i << "th Position: ";
+        in >> ob.arr[i];
     }
 
-    return res;
+    return in;
 }

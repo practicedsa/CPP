@@ -3,11 +3,13 @@ using namespace std;
 
 class matrix
 {
-    int *arr;
-    int size;
+    int **arr;
+    int *p;
+    int row;
+    int coloumn;
 
     public:
-        matrix(int size);
+        matrix(int row, int coloumn);
         void input();
         matrix add(matrix temp);
         void display();

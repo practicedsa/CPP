@@ -1,9 +1,14 @@
 #include "matrix.h";
 
-matrix::matrix(int size)
+matrix::matrix(int row, int coloumn)
 {
-    this->size=size;
-    arr = new int[size][size];
+    this->arr = new int*[row];
+    this->p = new int[row*coloumn];
+
+    for(int i=0; i<row; i++)
+    {
+            arr[i]=p+i*coloumn;
+    }
 }
 
 void matrix::input()
