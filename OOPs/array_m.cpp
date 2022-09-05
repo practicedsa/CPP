@@ -9,33 +9,31 @@ int main()
 
     Array a1(size_array);
     Array a2(size_array);
-    Array res(size_array);
+    Array res_add(size_array);
+    Array res_subtract(size_array);
+    Array res_multiply(size_array);
 
-    // a1.take_input();
-    // cout << "A1 INPUT OVER" << endl;
-    // a2.take_input();
-    // cout << "A2 INTPUT OVER" << endl;
-
-    // res = a1.add(a2);
-    res=a1+a2;
-
-     cin >> a1;
+    cin >> a1;
     cout << "A1 INPUT OVER" << endl;
     cin >> a2;
     cout << "A2 INTPUT OVER" << endl;
 
-    res = a1 + a2;
-    
-    cout << "Res is: ";
-    cout << res;
-
-    cout << "a1 is: ";
+    cout << "First array is : ";
     cout << a1;
-
-    cout << "a2 is: ";
+    cout << "Second array is : ";
     cout << a2;
-    
-    res.display();
+
+    res_add=a1+a2;
+    cout << "Addition result is : ";
+    cout << res_add;
+
+    res_subtract=a1-a2;
+    cout << "Subtraction result is : ";
+    cout << res_subtract;
+
+    res_multiply=a1*a2;   
+    cout << "Multiplication result is : ";
+    cout << res_multiply;
 
     return 0;
 }
