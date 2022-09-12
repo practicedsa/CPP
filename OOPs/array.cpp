@@ -12,6 +12,14 @@ Array::Array()
     arr = new int[size];
 }
 
+Array::Array(const Array& ob)
+{
+    for(int i=0; i<ob.size; i++)
+        this->arr[i]=ob.arr[i];
+    
+    this->size=ob.size;
+}
+
 ostream &operator<<(ostream &out, const Array &ob)
 {
     for (int i = 0; i < ob.size; i++)
@@ -35,12 +43,13 @@ istream &operator>>(istream &in, const Array &ob)
     return in;
 }
 
-Array Array::operator+(const Array &ob)
+Array Array::operator+(const Array &temp)
 {
+    Array temp(this->size);
 
     for (int i = 0; i < this->size; i++)
     {
-        this->arr[i] = this->arr[i] + ob.arr[i];
+        temp.arr[i] = this->arr[i] + temp.arr[i];
     }
 
     return *this;

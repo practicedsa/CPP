@@ -9,6 +9,7 @@ class Array
 public:
     Array();
     Array(int size);
+    Array(const Array& ob);
     Array operator+(const Array &ob);
     Array operator-(const Array &ob);
     Array operator*(const Array &ob);

@@ -3,7 +3,7 @@
 int main()
 {
     int row_number;
-
+   
     cout<<"Enter number of rows or coloumn : ";
     cin>>row_number;
 
